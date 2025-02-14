@@ -1,0 +1,17 @@
+{"properties": [
+  {
+    "name": "paso1_consumo.urlBase",
+    "type": "java.lang.String",
+    "description": "A description for 'paso1_consumo.urlBase'"
+  },
+  {
+    "name": "paso1_consumo.enpoint.especifico",
+    "type": "java.lang.String",
+    "description": "A description for 'paso1_consumo.enpoint.especifico'"
+  },
+  {
+    "name": "paso1_consumo.enpoint.general",
+    "type": "java.lang.String",
+    "description": "A description for 'paso1_consumo.enpoint.general'"
+  }
+]}
