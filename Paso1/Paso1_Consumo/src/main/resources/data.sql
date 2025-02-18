@@ -1,0 +1,4 @@
+insert into heroes (id, nombre, edad, nombre_imagen, descripcion) values (1, 'Spiderman', 15, 'spiderman.jpg', 'Spider-Man,​ es un superhéroe que emplea sus habilidades sobrehumanas, reminiscentes de una araña, para combatir a otros supervillanos.');
+insert into heroes (id, nombre, edad, nombre_imagen, descripcion) values (2, 'Wolverine', 197, 'wolverine.jpg', 'Wolverine, cuyo nombre de nacimiento es James Howlett, es un superhéroe y antihéroe, principalmente en asociación con los X-Men.');
+insert into heroes (id, nombre, edad, nombre_imagen, descripcion) values (3, 'Storm', 34, 'storm.jpg', 'Storm, alias de Ororo Iqadi Munroe desciende de una antigua estirpe de brujas-sacerdotisas africanas.');
+insert into heroes (id, nombre, edad, nombre_imagen, descripcion) values (4, 'Hulk/Bruce Banner', 39, 'hulk.jpg', 'Durante la detonación de una bomba gamma, el científico Bruce Banner salva al adolescente Rick Jones convirtiendose en hulk.');
