@@ -61,7 +61,7 @@ public class Heroe {
 	}
 
 	/**
-	 * 
+	 * Constructor vacio
 	 */
 	public Heroe() {
 		// TODO Auto-generated constructor stub

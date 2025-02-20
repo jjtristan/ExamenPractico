@@ -13,13 +13,13 @@ import com.paso1.consumo.entyties.Heroe;
 import com.paso1.consumo.repositories.IHeroeRepository;
 
 /**
- * 
+ * Servicio heroes
  */
 @Service
 public class HeroeServiceImpl implements IHeroeService {
-	
+
 	final private IHeroeRepository heroeRepository;
-	
+
 	public HeroeServiceImpl(IHeroeRepository heroeRepository) {
 		this.heroeRepository = heroeRepository;
 	}

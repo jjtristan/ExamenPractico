@@ -3,37 +3,35 @@
  */
 package com.paso2.puente.models;
 
-import jakarta.persistence.Column;
-
 /**
- * 
+ * Clase Heroe
  */
 public class Heroe {
 
 	private long id;
-	
+
 	/**
 	 * Nombre del heroe
 	 */
 	private String nombre;
-	
+
 	/**
 	 * Edad del heroe
 	 */
 	private long edad;
-	
+
 	/**
 	 * Nombre de la imagen a mostrar del heroe
 	 */
 	private String nombreImagen;
-	
+
 	/**
 	 * Descripción o algún detalle del heroe
 	 */
 	private String descripcion;
 
 	/**
-	 * 
+	 * Constructor vacio
 	 */
 	public Heroe() {
 		super();
@@ -125,6 +123,5 @@ public class Heroe {
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
 	}
-	
-	
+
 }

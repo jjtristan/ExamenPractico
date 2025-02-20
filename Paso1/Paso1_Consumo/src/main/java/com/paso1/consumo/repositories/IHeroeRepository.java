@@ -3,8 +3,6 @@
  */
 package com.paso1.consumo.repositories;
 
-
-
 import org.springframework.data.repository.CrudRepository;
 
 import com.paso1.consumo.entyties.Heroe;

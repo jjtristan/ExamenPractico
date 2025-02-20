@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 
 /**
- * 
+ * Constrolador para obtencion de los datos de los eroes
  */
 @RestController
 public class HeroeController {
