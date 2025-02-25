@@ -1,8 +1,8 @@
 import { Routes } from '@angular/router';
 import { LoginComponent } from './heroe/login/login.component';
-import { SignupComponent } from './heroe/signup/signup.component';
-import { AdminComponent } from './heroe/admin/admin.component';
 import { authGuard } from './auth/auth.guard';
+import { ListaHeroesComponent } from './heroe/lista-heroes/lista-heroes.component';
+import { DetalleHeroeComponent } from './heroe/detalle-heroe/detalle-heroe.component';
 
 export const routes: Routes = [
     {
@@ -12,10 +12,9 @@ export const routes: Routes = [
         path: 'login', component: LoginComponent
     },
     {
-        path: 'signup', component: SignupComponent
+        path: 'listado', component: ListaHeroesComponent // , canActivate: [authGuard]
     },
-
     {
-        path: 'admin', component: AdminComponent, canActivate: [authGuard]
+        path: 'detalle-heroe', component: DetalleHeroeComponent, canActivate: [authGuard]
     }
 ];

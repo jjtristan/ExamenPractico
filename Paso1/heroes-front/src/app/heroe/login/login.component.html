@@ -1,1 +1,12 @@
-<p>login works!</p>
+<div class="login-card">
+
+    <div class="card-title">
+        <h1>Inicio de sesión</h1>
+    </div>
+    <form class="form-group" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <input name="email" type="email" formControlName="email" placeholder="Correo Electronico">
+        <input type="password" formControlName="password" placeholder="Contraseña">
+        <button>Submit</button>
+    </form>
+
+</div>

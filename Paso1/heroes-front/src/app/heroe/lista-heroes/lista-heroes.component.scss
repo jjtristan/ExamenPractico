@@ -1,0 +1,31 @@
+
+  
+  * {
+    box-sizing: border-box;
+}
+
+:host {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(98, 111, 249);
+
+}
+
+.heroe-card {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    width: 40%;
+
+}
+
+.card-title h1 {
+    font-size: 26px;
+    font-weight: bold;
+}
