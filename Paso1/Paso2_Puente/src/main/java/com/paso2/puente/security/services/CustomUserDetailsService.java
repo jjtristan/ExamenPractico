@@ -17,7 +17,7 @@ import com.paso2.puente.dao.UserRepository;
 import com.paso2.puente.models.entities.Usuario;
 
 /**
- * 
+ * Clase CustomUserDetailsService
  */
 @Service
 public class CustomUserDetailsService implements UserDetailsService {
@@ -25,14 +25,14 @@ public class CustomUserDetailsService implements UserDetailsService {
 	private UserRepository userRepository;
 
 	/**
-	 * 
+	 * Constructor
 	 */
 	public CustomUserDetailsService() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	/**
+	 * Constructor
 	 * @param userRepository
 	 */
 	public CustomUserDetailsService(UserRepository userRepository) {
@@ -40,6 +40,10 @@ public class CustomUserDetailsService implements UserDetailsService {
 		this.userRepository = userRepository;
 	}
 	
+	/**
+	 * carga el usuario por el nombre de usuario
+	 * @param usernameOrEmail
+	 */
 	@Override
     public UserDetails loadUserByUsername(String usernameOrEmail) throws UsernameNotFoundException {
 

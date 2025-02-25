@@ -4,7 +4,7 @@
 package com.paso2.puente.models.dtos;
 
 /**
- * 
+ * Clase LonginDto 
  */
 public class LoginDto {
 	private String nombreUsuarioOEmail;
@@ -15,7 +15,6 @@ public class LoginDto {
 	 */
 	public LoginDto() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	/**

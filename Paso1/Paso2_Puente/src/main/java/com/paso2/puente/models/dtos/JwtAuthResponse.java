@@ -4,14 +4,14 @@
 package com.paso2.puente.models.dtos;
 
 /**
- * 
+ * Clase JwtAuthResponse
  */
 public class JwtAuthResponse {
 	private String accessToken;
 	private String tokenType = "Bearer";
 
 	/**
-	 * 
+	 * Constructor
 	 */
 	public JwtAuthResponse() {
 		super();

@@ -20,7 +20,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 /**
- * 
+ * Clase JwtAuthenticationFilter
  */
 @Component
 public class JwtAuthenticationFilter extends OncePerRequestFilter {
@@ -43,7 +43,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
 		// Validate Token
 		if (StringUtils.hasText(token) && jwtTokenProvider.validateToken(token)) {
-			// get username from token
+			
 			String username = jwtTokenProvider.getUsername(token);
 
 			UserDetails userDetails = userDetailsService.loadUserByUsername(username);

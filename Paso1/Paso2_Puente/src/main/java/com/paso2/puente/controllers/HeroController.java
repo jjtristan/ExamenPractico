@@ -15,7 +15,7 @@ import com.paso2.puente.models.Heroe;
 import com.paso2.puente.services.IHeroeService;
 
 /**
- * 
+ * Clase HeroController
  */
 @RestController
 @RequestMapping("/api/v1/public")

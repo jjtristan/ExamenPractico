@@ -13,6 +13,7 @@ import com.paso2.puente.models.Heroe;
 
 /**
  * Clase para el cliente de nuestro proyecto pasado de paso 1
+ * configuracion de feign
  */
 @FeignClient(name = "Paso1-Consumo", url = "localhost:8030")
 public interface Paso1ClienteRest {
