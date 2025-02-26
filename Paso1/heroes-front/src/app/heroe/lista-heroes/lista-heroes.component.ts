@@ -10,7 +10,7 @@ import { CommonModule } from '@angular/common';
   templateUrl: './lista-heroes.component.html',
   styleUrl: './lista-heroes.component.scss'
 })
-export class ListaHeroesComponent {
+export class ListaHeroesComponent implements OnInit {
   heroesService = inject(HeroeService);
   authService = inject(AuthService)
   router = inject(Router);
@@ -18,16 +18,23 @@ export class ListaHeroesComponent {
 
   ngOnInit(): void {
     this.heroesService.getCharacters().subscribe(data => {
-      console.log(data);
       this.heroes = data;
     });
   }
-  
+
   /**
-   * funcion para desloguearse
+   * Funcion para desloguearse
    */
-  public logout(){
+  public logout() {
     this.authService.logout();
     this.router.navigate(['/login']);
+  }
+
+  /**
+   * Ver el detalle del heroe
+   */
+  public verDetalle(idHeroe: number) {
+    console.log("entre", idHeroe)
+    this.router.navigate(['/detalle/' + idHeroe])
   }
 }

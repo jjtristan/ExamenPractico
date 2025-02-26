@@ -15,6 +15,6 @@ export const routes: Routes = [
         path: 'listado', component: ListaHeroesComponent // , canActivate: [authGuard]
     },
     {
-        path: 'detalle-heroe', component: DetalleHeroeComponent, canActivate: [authGuard]
+        path: 'detalle/:id', component: DetalleHeroeComponent//, canActivate: [authGuard]
     }
 ];

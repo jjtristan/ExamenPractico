@@ -1,10 +1,11 @@
-<!-- <div *ngFor="let heroe of heroes" class="image-item">
-    <h3>{{ heroe.nombre  }}</h3>
-    <img [src]="heroe.nombreImagen" alt="{{ heroe.nombre }}"> 
 
-</div> -->
 
-<div *ngFor="let heroe of heroes" class="heroe-card">
+<div class="card-title">
+    <button (click)="logout()">Cerrar Sesion</button>
+</div>
+
+<br>
+<div *ngFor="let heroe of heroes" class="heroe-card" (click)="verDetalle(heroe.id)">
 
     <div class="card-title">
         <img [src]="heroe.nombreImagen" alt="{{ heroe.nombre }}" style="width: 21em; height: 22em;">
